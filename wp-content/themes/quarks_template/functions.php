@@ -113,13 +113,16 @@ abstract class WPOrg_Meta_Box
 ?>
         <label for="wporg_field">Kode Emiten</label>
         <input name="kode_emiten" class="components-text-control__input" value="<?= $kode ?>" /> <br><br>
-        <label for="wporg_field">Kategori Emiten</label>
-        <input name="kategori_emiten" class="components-text-control__input" value="<?= $kategori ?>" />
-        <!-- <select name="kode_emiten" id="wporg_field" class="postbox">
-            <option value="">Select something...</option>
-            <option value="something" <?php selected($kode, 'something'); ?>>Something</option>
-            <option value="else" <?php selected($kode, 'else'); ?>>Else</option>
-        </select> -->
+
+        <label for="wporg_field">Kategori Emiten</label><br>
+        <select name="kategori_emiten" id="wporg_field" class="components-select-control__input" style="width: 100%" ;>
+            <option value="">Kategori Emiten</option>
+            <option value="something" <?php selected($kategori, 'Finance'); ?>>Finance</option>
+            <option value="Consumer Goods" <?php selected($kategori, 'Consumer Goods'); ?>>Consumer Goods</option>
+            <option value="Coal" <?php selected($kategori, 'Coal'); ?>>Coal</option>
+            <option value="Property" <?php selected($kategori, 'Property'); ?>>Property</option>
+            <option value="Others" <?php selected($kategori, 'Others'); ?>>Others</option>
+        </select>
 <?php
     }
 }

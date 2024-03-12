@@ -24,7 +24,7 @@ const annotation1 = {
 };
 
 const chartImage = new Image();
-chartImage.src = 'http://quarks.id/public/assets/img/chart-bg.png';
+chartImage.src = 'https://quarks.id/wp-content/themes/quarks_template/assets/img/chart-bg.png';
 
 const chartBgAnn = {
   type: 'box',
@@ -163,6 +163,11 @@ $(function(){
   jsondataTable.value = generateValueFromTable();
   if(jsondataTable.label.length>0)
   makeChart(jsondataTable);
+
+  if ($('#wpadminbar')[0]){
+      $('nav').css('top', '32px')
+      // $('.workspace').css('padding-top','32px !important');
+  }
 
   if($('.nav-link.active').html() == "Resources"){
     $.ajax({

@@ -17,8 +17,7 @@ class LaporanWP
     public static function renderTabel($category, $activeMenu): string
     {
 
-        $dirPath    = ABSPATH . '../public/data/laporan/emiten/' . $category . '/' . $activeMenu;
-
+        $dirPath    = ABSPATH . 'wp-content/emiten/' . $category . '/' . $activeMenu;
         $files = scandir($dirPath);
 
         $year = array();

@@ -1,6 +1,11 @@
-<?php get_header(); ?>
-<script>
-    window.location.href = "<?= get_permalink(get_the_ID()) ?>";
-</script>
+<?php
+$menuLocations = get_nav_menu_locations();
+$menuID = $menuLocations['primary'];
+$primaryNav = wp_get_nav_menu_items($menuID);
 
-<?php get_footer();  ?>
+?>
+
+<html>
+<meta http-equiv="refresh" content="0; url=<?= $primaryNav[0]->url ?>">
+
+</html>

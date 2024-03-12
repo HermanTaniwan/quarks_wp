@@ -39,7 +39,7 @@ class LaporanWP
 
             foreach ($docs as $d) {
                 if (in_array("$y$d.pdf", $files))
-                    $html .= '<td class="table-data-value"><a href="' . site_url() . '/../view/' . $category . '/' . $activeMenu . '/' . EncryptionWP::encrypt(LaporanWP::getName(5) . '_' . $y . $d . '.pdf') . '" target="_blank"> link </a></td>';
+                    $html .= '<td class="table-data-value"><a href="' . site_url() . '/view/?data=' . EncryptionWP::encrypt(LaporanWP::getName(5) . '_' . $category . '_' . $activeMenu . '_' . $y . $d . '.pdf') . '" target="_blank"> link </a></td>';
                 else
                     $html .= '<td class="table-data-value"></td>';
             }

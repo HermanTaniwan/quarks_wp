@@ -45,7 +45,13 @@ function quarks_register_scripts()
 add_action('wp_enqueue_scripts', 'quarks_register_scripts');;
 
 
+function custom_query_vars_filter($vars)
+{
 
+    $vars[] .= 'data';
+    return $vars;
+}
+add_filter('query_vars', 'custom_query_vars_filter');
 
 
 

@@ -253,6 +253,23 @@ a{
     color:rgb(114, 113, 113);
 }
 
+.table a {
+  color: rgb(160, 160, 160);
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+.table a:hover{
+  color:rgb(222, 222, 222);
+  
+}
+
+.table a:focus {
+  background-color: none;
+}
+
+.table a.active{
+  color:white;;
+}
+
 blockquote {
   border-width: 1px;
   border-left-width: 10px;

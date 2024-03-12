@@ -307,14 +307,14 @@ table{
     
 }
 
-table tr:first-child, thead{
+thead{
   --tw-border-opacity: 1;
   border-color: rgb(62 62 62/var(--tw-border-opacity));
-  background-color: rgba(114, 113, 113,10%) !important;
-  border-bottom-width: 1px!important;
+  background-color: rgba(114, 113, 113,10%);
+  border-bottom-width: 1px
 }
 
-table tr:first-child td, th{
+th{
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 5px;

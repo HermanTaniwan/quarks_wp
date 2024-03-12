@@ -189,7 +189,7 @@ a{
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: rgb(214, 214, 214);
+    /* color: rgb(214, 214, 214); */
 }
 
 .nav-link{
@@ -209,7 +209,7 @@ a{
 }
 .btn-toggle:hover,
 .btn-toggle:focus {
-    color: rgba(0, 0, 0, .85);
+    /* color: rgba(0, 0, 0, .85); */
 }
 
 .btn-toggle::before {
@@ -234,9 +234,11 @@ a{
     margin-left: 1.25rem;
     text-decoration: none;
     color: rgb(160, 160, 160);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 .btn-toggle-nav a:hover{
-    color:rgb(102, 102, 102);
+    color:rgb(222, 222, 222);
+    
 }
 
 .btn-toggle-nav a:focus {

@@ -9,9 +9,10 @@
                             <?php
 
                             // var_dump(get_the_ID());
+                            $currPostID = get_the_ID();
                             $category = null;
-                            if (get_the_ID()) {
-                                $category = get_the_category(get_the_ID());
+                            if ($currPostID) {
+                                $category = get_the_category($currPostID);
                             }
 
                             if ($category != null) {
@@ -22,7 +23,8 @@
 
                                 $post_content = get_posts($args);
                                 foreach ($post_content as $singlePost) {
-                                    echo '<li class="nav-item"><a href="' . get_permalink($singlePost) . '" class="rounded active ">' . $singlePost->post_title . '</a></li>';
+                                    $active = ($singlePost->ID == $currPostID) ? 'active' : '';
+                                    echo '<li class="nav-item"><a href="' . get_permalink($singlePost) . '" class="rounded ' . $active . '">' . $singlePost->post_title . '</a></li>';
                                 };
                             }
 

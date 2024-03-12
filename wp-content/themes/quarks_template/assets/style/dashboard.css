@@ -13,7 +13,6 @@ html{
 
 h1,h2,h3,h4,h5,h6, blockquote{
   font-family: 'Signika', serif !important;
-  padding-top:1em;
 }
 
 body{
@@ -25,6 +24,14 @@ body{
 
 p,li{
   color:#a8a8a8;
+}
+
+.workspace li{
+  margin-bottom: 1.1em;
+}
+
+p, ol{
+  margin-bottom: 2.5em;
 }
 
 a{

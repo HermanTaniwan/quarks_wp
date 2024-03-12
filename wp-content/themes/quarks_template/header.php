@@ -75,7 +75,7 @@
 
     <div class="inline-block" style="height: 50px;"></div>
 
-    <div class="container-fluid workspace">
+    <div class="container-fluid">
 
         <div class="wrapper row">
             <?php

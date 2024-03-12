@@ -8,7 +8,6 @@
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" id="list-sidebar">
                             <?php
 
-                            // var_dump(get_the_ID());
                             $currPostID = get_the_ID();
                             $category = null;
                             if ($currPostID) {

@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
     <meta property="og:title" content=Fundamental Investor Tools>
     <meta property="og:site_name" content="Quarks.id">
-    <meta property="og:url" content="https://www.quarks.id">
+    <meta property="og:url" content="<?= site_url() ?>">
     <meta property="og:description" content="Alat untuk mempermudah analisa seorang investor fundamental">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
@@ -35,7 +35,7 @@
 
     <nav class=" position-fixed w-100 z-3 navbar navbar-expand-sm bg-dark navbar-dark shadow">
         <div class="container-fluid">
-            <a class="navbar-brand" href="https://quarks.id/"><img style="padding-bottom:5px" src="<?= get_template_directory_uri() ?>/assets/img/favicons/atom.png" /> Quarks</a>
+            <a class="navbar-brand" href="<?= site_url() ?>"><img style="padding-bottom:5px" src="<?= get_template_directory_uri() ?>/assets/img/favicons/atom.png" /> Quarks</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,10 +48,17 @@
 
                     $menuID = $menuLocations['primary']; // Get the *primary* menu ID
 
+                    $category = get_the_category();
+                    //var_dump($category);
+
                     $primaryNav = wp_get_nav_menu_items($menuID);
                     foreach ($primaryNav as $navItem) {
+                        $active = ($category[0]->name == $navItem->title) ? 'active' : '';
+                        // var_dump($category->ID);
+                        //var_dump($navItem->ID);
+
                         echo '<li class="nav-item">';
-                        echo '<a class="nav-link btn-resource active" aria-current="page" href="' . $navItem->url . '" title="' . $navItem->title . '">' . $navItem->title . '</a>';
+                        echo '<a class="nav-link btn-resource ' . $active . '" aria-current="page" href="' . $navItem->url . '" title="' . $navItem->title . '">' . $navItem->title . '</a>';
                         echo '</li>';
                     }
                     ?>

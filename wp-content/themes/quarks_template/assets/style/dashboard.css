@@ -28,7 +28,7 @@ p,li{
 }
 
 a{
-  color:#e1dede !important;
+  color:#3d3d3d;
 }
 
 /*
@@ -81,6 +81,15 @@ a{
   padding: .75rem 1rem;
 }
 */
+
+.navbar-nav a{
+  color:#797777;
+}
+
+.navbar-nav a.active{
+  color: white;
+}
+
 .selector-wrapper{
   margin-top:15px;
 } 
@@ -235,7 +244,7 @@ a{
 }
 
 .btn-toggle-nav a.active{
-    color:white;
+    color:white;;
 }
 
 .btn-toggle-nav a.later{

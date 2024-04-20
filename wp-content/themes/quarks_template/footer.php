@@ -1,10 +1,3 @@
-</main>
-
-<div class="col-lg-2"></div>
-</div>
-</div>
-</div>
-
 <!-- Bootstrap Javascript -->
 <?php wp_footer();; ?>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -29,6 +22,3 @@
 
     gtag('config', 'G-MYNTJD8MY4');
 </script>
-</body>
-
-</html>

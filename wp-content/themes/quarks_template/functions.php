@@ -123,6 +123,7 @@ abstract class WPOrg_Meta_Box
             <option value="Property" <?php selected($kategori, 'Property'); ?>>Property</option>
             <option value="Others" <?php selected($kategori, 'Others'); ?>>Others</option>
         </select>
+
 <?php
     }
 }

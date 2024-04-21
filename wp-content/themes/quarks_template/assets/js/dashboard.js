@@ -187,8 +187,30 @@ $(function(){
     window.location.href = $(this).find("option:selected").attr('data');      
   });
 
-  dselect(document.querySelector('#data-selector'),{
-    search: true
-  })
+  // dselect(document.querySelector('#data-selector'),{
+  //   search: true
+  // })
+
+  var onSampleResized = function(e){  
+    var table = $(e.currentTarget); //reference to the resized table
+  };  
+
+//  $("table").colResizable({
+//     liveDrag:true,
+//     gripInnerHtml:"<div class='grip'></div>", 
+//     draggingClass:"dragging", 
+//     onResize:onSampleResized
+//   });
+
+  $('table').tablesorter({
+    theme:'blackice',
+    // initialize zebra striping and resizable widgets on the table
+    widgets: [ 'zebra', 'resizable', 'stickyHeaders' ],
+    widgetOptions: {
+      // storage_useSessionStorage : true, deprecated in v2.28.8
+      storage_storageType: 's', // use first letter (s)ession
+      resizable_addLastColumn : true
+    }
+  });
 
 })

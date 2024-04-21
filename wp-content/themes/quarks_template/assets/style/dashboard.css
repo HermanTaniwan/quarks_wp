@@ -342,3 +342,20 @@ tr:nth-child(even) {
 article{
   width: 100%;;
 }
+
+
+/***** TABLE CUSTOM STYLE****/
+.tablesorter-blackice th, .tablesorter-blackice thead td {
+  padding: 4px;
+  font: 13px / 20px Arial, Sans-serif;
+  font-weight: 700;
+  color: #e5e5e5;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(135, 128, 128, 0.7);
+  background-color: #292929 !important;
+  border: 1px solid #232323;
+}
+
+.tablesorter-blackice tbody>tr.even:hover>td, .tablesorter-blackice tbody>tr.hover>td, .tablesorter-blackice tbody>tr.odd:hover>td, .tablesorter-blackice tbody>tr:hover>td {
+  background-color: #3a3a3a;
+}

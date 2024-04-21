@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
-
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/theme.blackice.min.css" integrity="sha512-Dxub38/n6Pa9LvPMBWf4SHDdJLUnbwoy4Ag7xNnMg/47iXsYSOj+iR7wShHBXiMbOcLuO4pWBf+BpdPwFq5BTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta property="og:title" content=Fundamental Investor Tools>
     <meta property="og:site_name" content="Quarks.id">
     <meta property="og:url" content="<?= site_url() ?>">

@@ -416,6 +416,7 @@ article{
   top: 0px;
   left:auto !important;
   overflow-x: auto;
+  height:85vh;
 }
 
 .tablesorter-sticky-wrapper{

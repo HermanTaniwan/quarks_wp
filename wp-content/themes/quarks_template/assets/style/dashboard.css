@@ -416,7 +416,7 @@ article{
   top: 0px;
   left:auto !important;
   overflow-x: auto;
-  height:85vh;
+  height:88vh;
 }
 
 .tablesorter-sticky-wrapper{
@@ -436,4 +436,8 @@ article{
 
 .tablesorter{
   margin-top:0 !important;
+}
+
+.wp-block-table{
+  padding:0;
 }

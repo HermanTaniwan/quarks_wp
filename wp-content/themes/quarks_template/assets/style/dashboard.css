@@ -347,15 +347,93 @@ article{
 /***** TABLE CUSTOM STYLE****/
 .tablesorter-blackice th, .tablesorter-blackice thead td {
   padding: 4px;
-  font: 13px / 20px Arial, Sans-serif;
+  font: 12px / 14px Arial, Sans-serif !important;
   font-weight: 700;
   color: #e5e5e5;
   text-align: left;
   text-shadow: 0 1px 0 rgba(135, 128, 128, 0.7);
-  background-color: #292929 !important;
+  background-color: #2e3740 !important;
   border: 1px solid #232323;
 }
 
 .tablesorter-blackice tbody>tr.even:hover>td, .tablesorter-blackice tbody>tr.hover>td, .tablesorter-blackice tbody>tr.odd:hover>td, .tablesorter-blackice tbody>tr:hover>td {
-  background-color: #434343;
+  background-color: #393e43;
+}
+
+.tablesorter-blackice tr.odd>td {
+  background-color: #262a2e;
+}
+
+.tablesorter-blackice tr.even>td {
+  background-color: #2d3238;
+}
+
+
+/* Fixed column scroll bar spacer styling */
+.tablesorter-scroller-bar-spacer {
+  background: #eee;
+}
+/* add border to right side (LTR pages) of fixed column */
+.tablesorter-scroller-fixed:after {
+  content: '';
+  border-right: 1px solid #444;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  /* set to zero for non-jquery ui themes; use "left" here for RTL pages */
+  right: 0;
+  /* match the margins set to the table to keep the border the same height as the table */
+  margin: 10px 0 15px;
+}
+
+/* using-x-theme added by the demo code */
+.using-jui-theme .tablesorter-scroller-fixed:after {
+  /* use "left" here for RTL pages */
+  right: 0;
+}
+.using-green-theme .tablesorter-scroller-fixed:after,
+.using-black-ice-theme .tablesorter-scroller-fixed:after,
+.using-dark-theme .tablesorter-scroller-fixed:after,
+.using-dropbox-theme .tablesorter-scroller-fixed:after {
+  /* match the margins set to the table to keep the border the same height as the table */
+  margin: 0;
+}
+
+/* OPTIONAL CSS! */
+#fixed-columns-table tbody td {
+  /* force "Notes" column to not wrap, so we get a horizontal scrolling demo! */
+  white-space: nowrap;
+  /* Add min column width, or "Index" column filter gets too narrow to use */
+  min-width: 60px;
+}
+
+
+/* wrapper of table 2 */
+.wrapper {
+  position: relative;
+  top: 0px;
+  left:auto !important;
+  height: 600px;
+  overflow-x: auto;
+}
+
+.tablesorter-sticky-wrapper{
+  left:auto !important;
+}
+
+.workpages .table-sorter{
+  width: 100%;
+  margin-top:0;
+}
+
+.workpages .container{
+  width:100%;
+  max-width: 100%;
+  margin-top:0
+}
+
+.tablesorter{
+  margin-top:0 !important;
 }

@@ -191,26 +191,32 @@ $(function(){
   //   search: true
   // })
 
-  var onSampleResized = function(e){  
-    var table = $(e.currentTarget); //reference to the resized table
-  };  
 
-//  $("table").colResizable({
-//     liveDrag:true,
-//     gripInnerHtml:"<div class='grip'></div>", 
-//     draggingClass:"dragging", 
-//     onResize:onSampleResized
-//   });
 
   $('table').tablesorter({
     theme:'blackice',
+    widthFixed : true,
+    showProcessing: true,
     // initialize zebra striping and resizable widgets on the table
-    widgets: [ 'zebra', 'resizable', 'stickyHeaders' ],
+    widgets: [ 'zebra', 'resizable', 'filter','stickyHeaders', 'scroller' ],
     widgetOptions: {
       // storage_useSessionStorage : true, deprecated in v2.28.8
       storage_storageType: 's', // use first letter (s)ession
-      resizable_addLastColumn : true
-    }
-  });
+      resizable_addLastColumn : true,
+      // jQuery selector or object to attach sticky header to
+      stickyHeaders_attachTo: $('.wrapper'),
+      stickyHeaders_filteredToTop : true, 
+      scroller_fixedColumns : 1,
+      scroller_addFixedOverlay : true,
+// add hover highlighting to the fixed column (disable if it causes slowing)
+scroller_rowHighlight : 'hover',
+
+// bar width is now calculated; set a value to override
+scroller_barWidth : null
+
+          }
+        });
+
+        
 
 })

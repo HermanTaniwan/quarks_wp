@@ -48,9 +48,9 @@
 
     <div class="container-fluid">
         <div class="wrapper row">
-            <main class=" workspace resource-area">
+            <main class=" workspace resource-area workpages">
 
-                <div class="container mt-3">
+                <div class="container">
 
                     <div class="row">
                         <?php the_content(); ?>

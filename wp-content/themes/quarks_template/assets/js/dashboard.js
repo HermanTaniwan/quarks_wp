@@ -199,6 +199,8 @@ $(function(){
     showProcessing: true,
     // initialize zebra striping and resizable widgets on the table
     widgets: [ 'zebra', 'resizable', 'filter','stickyHeaders', 'scroller' ],
+    
+    sortList : [[9,1]],
     widgetOptions: {
       // storage_useSessionStorage : true, deprecated in v2.28.8
       storage_storageType: 's', // use first letter (s)ession

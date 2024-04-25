@@ -447,13 +447,10 @@ article{
 }
 
 .hdq_question{
-  background-color: #272c31;
+  background-color: #272c31 !important;
 
 }
 
-.hdq_label_answer{
-  color:white !important;
-}
 
 
 .hdq_quiz .hdq_input {
@@ -466,16 +463,9 @@ h3.hdq_question_heading {
 }
 
 .hdq_question_heading{
-  color:white;
+  color:white !important;
 }
 
-
-
-.hdq_label_answer {
-  display: block;
-  font-size: 1.0em;
-  cursor: pointer;
-  padding: 5px;
-  color: #2d2d2d !important;
-  line-height: 1.4;
+.hdq_label_answer{
+  color:white !important;
 }

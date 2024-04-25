@@ -445,15 +445,37 @@ article{
 .wp-block-hdq-quiz-block p{
   margin-bottom:0;
 }
+
+.hdq_question{
+  background-color: #272c31;
+
+}
+
+.hdq_label_answer{
+  color:white !important;
+}
+
+
 .hdq_quiz .hdq_input {
   background: white;
   border: 1px solid black !important;
 }
 
-h2.hdq_results_title, h3.hdq_question_heading {
-  font-size:16px;
+h3.hdq_question_heading {
+  font-size:20px;
 }
 
-.hdq_answers{
-  font-size:14px;
+.hdq_question_heading{
+  color:white;
+}
+
+
+
+.hdq_label_answer {
+  display: block;
+  font-size: 1.0em;
+  cursor: pointer;
+  padding: 5px;
+  color: #2d2d2d !important;
+  line-height: 1.4;
 }

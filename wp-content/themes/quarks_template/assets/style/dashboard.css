@@ -446,12 +446,14 @@ article{
   margin-bottom:0;
 }
 
-.hdq_question{
+.hdq_results_wrapper, .hdq_question{
   background-color: #272c31 !important;
   border:none !important;
 }
 
-
+.hdq_results_title{
+  color:white !important;
+}
 
 .hdq_quiz .hdq_input {
   background: white;
@@ -468,4 +470,8 @@ h3.hdq_question_heading {
 
 label.hdq_label_answer {
   color:white !important;
+}
+
+.hdq_facebook, .hdq_twitter{
+  display:none !important;
 }

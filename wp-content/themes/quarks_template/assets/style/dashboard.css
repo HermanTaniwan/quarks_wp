@@ -448,7 +448,7 @@ article{
 
 .hdq_question{
   background-color: #272c31 !important;
-
+  border:none !important;
 }
 
 
@@ -466,6 +466,6 @@ h3.hdq_question_heading {
   color:white !important;
 }
 
-.hdq_label_answer{
+label.hdq_label_answer {
   color:white !important;
 }

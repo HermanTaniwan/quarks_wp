@@ -441,3 +441,19 @@ article{
 .wp-block-table{
   padding:0;
 }
+
+.wp-block-hdq-quiz-block p{
+  margin-bottom:0;
+}
+.hdq_quiz .hdq_input {
+  background: white;
+  border: 1px solid black !important;
+}
+
+h2.hdq_results_title, h3.hdq_question_heading {
+  font-size:16px;
+}
+
+.hdq_answers{
+  font-size:14px;
+}
